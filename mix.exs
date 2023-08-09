@@ -6,9 +6,9 @@ defmodule IsUrl.Mixfile do
       app: :is_url,
       version: "0.0.1",
       elixir: "~> 1.1",
-      build_embedded: Mix.env == :prod,
-      start_permanent: Mix.env == :prod,
-      deps: deps,
+      build_embedded: Mix.env() == :prod,
+      start_permanent: Mix.env() == :prod,
+      deps: deps(),
       description: "Validate a url",
       package: [
         maintainers: ["John Otander"],
